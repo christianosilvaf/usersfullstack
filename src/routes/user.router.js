@@ -8,6 +8,8 @@ userRouter.route("/") //users ADRESS
         .post(createUser);
 
 userRouter.route("/:id") 
-    .delete(removeUser);
+    .delete(removeUser)
+    .put(updateUser);
+    
 module.exports = userRouter;
 
