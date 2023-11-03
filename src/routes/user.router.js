@@ -7,5 +7,7 @@ userRouter.route("/") //users ADRESS
 		.get(getAll)
         .post(createUser);
 
+userRouter.route("/:id") 
+    .delete(removeUser);
 module.exports = userRouter;
 
