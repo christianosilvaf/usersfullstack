@@ -9,7 +9,7 @@ userRouter.route("/") //users ADRESS
 
 userRouter.route("/:id/") 
     .delete(removeUser)
-    .put(updateUser);
+    .patch(updateUser);
 
 module.exports = userRouter;
 
